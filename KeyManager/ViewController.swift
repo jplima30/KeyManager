@@ -9,9 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var totalPasswordTextField: UITextField!
+    @IBOutlet weak var numberOfCharacters: UITextField!
+    @IBOutlet weak var smallLettersSwitch: UISwitch!
+    @IBOutlet weak var numbersSwitch: UISwitch!
+    @IBOutlet weak var capitalLettersSwitch: UISwitch!
+    @IBOutlet weak var specialCharacters: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
