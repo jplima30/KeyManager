@@ -11,22 +11,19 @@ class PasswordsViewController: UIViewController {
     
     @IBOutlet weak var PasswordTextView: UITextView!
     
+    var numberOfPassword: Int = 1
+    var numberOfCharacters: Int = 10
+    var useLetters: Bool!
+    var useNumbers: Bool!
+    var useOfCapittalLeters: Bool!
+    var useSpecialCharacters: Bool!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func generate(_ sender: UIButton) {
+        
     }
-    */
-
 }

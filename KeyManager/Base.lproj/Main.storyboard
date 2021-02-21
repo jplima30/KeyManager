@@ -148,9 +148,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="capitalLettersSwitch" destination="CnA-p5-i89" id="6QR-CY-3gN"/>
+                        <outlet property="lettersSwitch" destination="n2k-tT-BNi" id="bqs-aD-hDP"/>
                         <outlet property="numberOfCharacters" destination="lfD-Xi-YSm" id="cdK-PL-8Lw"/>
                         <outlet property="numbersSwitch" destination="dWj-vK-c1s" id="8Pr-jD-pvl"/>
-                        <outlet property="smallLettersSwitch" destination="n2k-tT-BNi" id="bqs-aD-hDP"/>
                         <outlet property="specialCharacters" destination="Zx0-at-TGe" id="DoK-t5-SoP"/>
                         <outlet property="totalPasswordTextField" destination="KPE-wE-RiC" id="Ece-za-gWU"/>
                     </connections>
@@ -185,6 +185,9 @@
                                 <state key="normal" title="Gerar novamente">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="generate:" destination="nA7-tc-iej" eventType="touchUpInside" id="n7y-Qe-5QG"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-kB-Ghb">
                                 <rect key="frame" x="24" y="96" width="326" height="426"/>
@@ -214,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="1212" y="116.49175412293854"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="ijz-uJ-f7E">
             <objects>
-                <viewController id="Kz6-v4-r5Q" sceneMemberID="viewController">
+                <viewController id="Kz6-v4-r5Q" customClass="SecurityTipsViewController" customModule="KeyManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mqH-zc-VyX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,6 +236,9 @@
                                 <state key="normal" title="Fechar">
                                     <color key="titleColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="close:" destination="Kz6-v4-r5Q" eventType="touchUpInside" id="eCn-gy-VgM"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vqp-lq-zJE">
                                 <rect key="frame" x="31" y="55" width="297" height="502"/>
@@ -415,7 +421,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOD-Zu-l73" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879.2" y="117.39130434782609"/>
+            <point key="canvasLocation" x="1974" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f9R-wT-eX7">
